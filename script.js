@@ -79,6 +79,11 @@ $(document).keydown(() => {
         startGame();
     }
 });
+$(document).on('touchstart',function(){
+    if (!started) {
+        startGame();
+    }
+})
 
 function startGame() {
     started = true;
